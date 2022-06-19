@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+html {
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* margin: 10%; */
+  overflow: hidden;
+  cursor: url(./images/cursor1.png), default;
+  background-image: url(./images/home/home_bg.png);
+  padding-bottom: 0%;
+  margin: 0 auto;
+}
+/* ------------------------- scroll bar --------------------- */
+body::-webkit-scrollbar {
+  background-color: rgba(247, 96, 114, 1);
+  width: 10px;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(247, 96, 114, 1);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(252, 190, 203, 1);
+}
+
+/* ------------------------------ Header Bar----------------------------------- */
+.logo{
+  width: 100px;
+  cursor: pointer;
+  animation: float 6s ease-in-out infinite;
+  box-sizing: border-box;
+  border: 2px white solid;  
+  border-radius: 50%;
+}
+.logo:hover{
+    cursor: url(./images/cursor2.png), default;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+li, a, button{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  /* text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out; */
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.nav-links{
+  list-style: none;
+}
+.nav-links li{
+  display: inline-block;
+  padding: 0 25px;
+}
+
+.nav_links li, a{
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li, a:hover{
+  color:rgba(247, 96, 114, 1);
+  cursor: url(./images/cursor2.png), default;
+}
+
+button{
+  background-color:  rgba(252, 190, 203, 1);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover{
+  background-color: rgba(247, 96, 114, 0.4);
+  cursor: url(./images/cursor2.png), default;
+}
+
+/*--------------- welcome text ---------------------- */
+
+.welcome h1{
+    text-align: center;
+    color: white;
+    font-style: italic;
+    letter-spacing: 5px;
+    padding-bottom: 15px;
+}
+
+/*------------------------ video ------------------------- */
+
+.video-container {
+  width: 994px;
+  height: 559px;
+  display: block;
+  margin: auto;
+  border-style: solid;
+  border-color: rgba(252, 190, 203, 1);
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1);
+}
+
+hr{
+    border-style: rounded;
+    border-color:rgba(247, 96, 114, 1);
+    border-radius: 30px;
+    width: 994px;
+    height: 5px;
+    background-color: rgba(247, 96, 114, 1);
+    margin-top: 35px;
+}
+
+/*------------------------ bottom button ------------------------- */
+
+.YaeMiko{
+    display: flex;
+    justify-content: center;
+    border-color: rgba(39,39,39,0.473);
+    border-radius: 50px;
+    margin: auto;
+}
+
+.YaeMiko h1{
+    margin-top: 35px;
+    text-align: center;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+.YaeMiko button{
+     background-color:  rgba(39, 39, 39, 0.473);
+     border-radius: 15px;
+     cursor: default;
+     transition: all 0.3s ease 0s;
+     width: 200px;
+     height: 50px;
+
+}
+.YaeMiko button:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1);
+    cursor: url(./images/cursor2.png), default;
+}
+
+/* --------------------------- end ------------------------- */
+.end{
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.end h1{
+    color: white;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-family: 'Monstserrat';
+    font-size: 20px;
+}
+
+/* ------------------------- footer ------------------------- */
+#footer{
+  background-color: black;
+  position: relative;
+  height: 35px;
+  margin-top: -35px;
+  clear: both;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.footer-image{
+  width: 25px;
+}
+span + span{
+  margin-left: 10px;
+}
+
+
+  
+
+
+
