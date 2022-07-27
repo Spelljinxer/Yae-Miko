@@ -1,4 +1,4 @@
-# Spelljinxer.github.io - placeholder for Yae Miko site
+# Unfinished project lol
 > this is just a boredom killer
 
 # TODO
